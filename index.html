@@ -1,39 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green-Earth</title>
-<!--TailwindCss & Daisy Ui-->
+    <!--TailwindCss & Daisy Ui-->
 
-<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
+
 <body>
-    <header >
-       <nav class="bg-[#15803D] h-24 md:h-20 flex flex-col md:flex-row justify-between items-center px-4">
-        <div>
-            <h2 class="text-white font-semibold">Green Earth</h2>
-        </div>
+    <!-- Navigation Header -->
+    <header>
+        <nav class="bg-[#15803D] h-auto md:h-20 flex flex-col md:flex-row justify-between items-center px-4 py-3 md:py-0">
+            <!-- Logo -->
+            <div class="mb-3 md:mb-0">
+                <h2 class="text-white font-semibold text-lg md:text-xl">Green Earth</h2>
+            </div>
 
-        <div class="md:flex">
-            <ul class="flex space-x-4">
-               <li><a href="#" class="text-white hover:text-gray-300">About</a></li>
-                <li><a href="#" class="text-white hover:text-gray-300">Gallery</a></li>
-                <li><a href="#" class="text-white hover:text-gray-300">Plant a Tree</a></li>
-            </ul>
-        </div>
-        <button class="bg-[#FACC15] rounded-full text-[#15803D] text-[12px] h-[19px] w-[91px] mb-2" >Plant a Tree</button>
+            <!-- Navigation Menu -->
+            <div class="mb-3 md:mb-0">
+                <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-center">
+                    <li><a href="#" class="text-white hover:text-gray-300 transition-colors">About</a></li>
+                    <li><a href="#" class="text-white hover:text-gray-300 transition-colors">Gallery</a></li>
+                    <li><a href="#" class="text-white hover:text-gray-300 transition-colors">Plant a Tree</a></li>
+                </ul>
+            </div>
+
+            <!-- CTA Button -->
+            <button class="bg-[#FACC15] hover:bg-yellow-300 rounded-full text-[#15803D] text-sm font-medium px-4 py-2 transition-colors">
+                Plant a Tree
+            </button>
         </nav>
-        
-        <section>
-
-        </section>
     </header>
- 
+
+    <!-- Hero Section -->
+    <main>
+        <section class="bg-[#CFF0DC] relative overflow-hidden min-h-[600px] md:min-h-[500px] flex items-center justify-center">
+            <!-- Left Leaf Image -->
+            <div class="absolute left-0 top-0 h-full w-auto hidden md:block">
+                <img class="h-full w-auto object-contain" src="./assets/hero-leaf1.png" alt="Green leaf decoration">
+            </div>
+            
+            <!-- Right Leaf Image -->
+            <div class="absolute right-0 top-0 h-full w-auto hidden md:block">
+                <img class="h-full w-auto object-contain" src="./assets/hero-leaf2.png" alt="Green leaf decoration">
+            </div>
+            
+            <!-- Center Content -->
+            <div class="text-center px-4 md:px-8 z-10 max-w-2xl mx-auto">
+                <h1 class="text-[#1F2937] font-bold text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-6 leading-tight">
+                    Plant a Tree, Grow a Future
+                </h1>
+                <p class="text-[#1F2937] text-base md:text-lg mb-6 md:mb-8 max-w-lg mx-auto leading-relaxed">
+                    Join our mission to plant 1 million trees and make the Earth greener for future generations.
+                </p>
+                
+                <button class="bg-[#FACC15] hover:bg-yellow-300 rounded-full text-[#15803D] text-sm md:text-base font-medium px-8 py-3 md:px-10 md:py-3 transition-colors shadow-md hover:shadow-lg">
+                    Get Involved
+                </button>
+            </div>
+
+           
+        </section>
+    </main>
+
 
     <!--Javascript-->
     <script src="./script.js"></script>
 </body>
+
 </html>
