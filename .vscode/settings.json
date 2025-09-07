@@ -1,0 +1,27 @@
+{
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "css": "css"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["class:\\s*?[\"'`]([^\"'`]*).*?[\"'`]", "[\"'`]([^\"'`]*)[\"'`]"],
+    ["class=([\"'`])([^\"'`]*)\\1", "([^\"'`\\s]+)"]
+  ],
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.colorDecorators": true,
+  "tailwindCSS.showPixelEquivalents": true,
+  "tailwindCSS.hovers": true,
+  "tailwindCSS.suggestions": true,
+  "editor.quickSuggestions": {
+    "strings": true,
+    "comments": false,
+    "other": true
+  },
+  "editor.inlineSuggest.enabled": true,
+  "css.validate": false,
+  "tailwindCSS.validate": true,
+  "files.associations": {
+    "*.html": "html"
+  }
+}

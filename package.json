@@ -1,0 +1,16 @@
+{
+  "name": "green-earth",
+  "version": "1.0.0",
+  "description": "Green Earth project with Tailwind CSS and DaisyUI",
+  "main": "index.html",
+  "scripts": {
+    "dev": "echo 'Development server would go here'"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.0",
+    "daisyui": "^5.0.0"
+  },
+  "keywords": ["tailwind", "daisyui", "css", "frontend"],
+  "author": "",
+  "license": "MIT"
+}
